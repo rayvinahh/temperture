@@ -1,6 +1,9 @@
 import tkinter as tk
 
 def convert_function():
+    
+
+
     temp = float (temp_entry.get())
 
     if(var.get()==1):
@@ -40,6 +43,7 @@ root.configure(bg = "#EEA698")
 root.bind('<KeyPress>', key_pressed) # When A Key is pressed, Call the key_pressed Function
 
 var = tk.IntVar()
+var.set(1)
 
 temp_entry = tk.Entry (root)
 temp_entry.grid (row = 0, column = 0, columnspan = 2)
